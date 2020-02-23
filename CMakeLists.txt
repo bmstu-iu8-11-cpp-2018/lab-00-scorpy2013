@@ -1,6 +1,6 @@
 #include <iostream>
-// using namespace std;
-int main(int argc, char** argv) 
+using std::endl;
+int main() 
 {
 	std::cout << "Hello, world!" << endl;
 	system ("pause");
