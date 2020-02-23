@@ -1,3 +1,4 @@
+dist: trusty
 language: cpp
 sudo: true
 
@@ -29,4 +30,3 @@ script:
   - cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=YES -DCMAKE_EXE_LINKER_FLAGS=-fuse-ld=gold .. && make
   - ( for file in $(find ../ -name "*.cpp"); do echo $file; clang-check -analyze $file -p ./ || exit; done );
   - ./executable
- dist: trusty
