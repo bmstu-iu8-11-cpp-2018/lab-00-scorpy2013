@@ -1,8 +1,6 @@
 #include <iostream>
-using std::endl;
 int main() 
 {
-	std::cout << "Hello, world!" << endl;
-	system ("pause");
+	std::cout << "Hello, world!";
 	return 0;
 }
